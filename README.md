@@ -441,10 +441,10 @@ In C programming, when a function calls itself then the process is known as recu
 
 The factorial of n equals the product of n with the next smaller factorial:
 
-\begin{align*}
+$$\begin{align*}
 n! &=n\times(n-1)\times(n-2)\times\dots\times3\times2\times1\\
 &=n\times(n-1)!
-\end{align*}
+\end{align*}$$
 
 
 ```clike=
