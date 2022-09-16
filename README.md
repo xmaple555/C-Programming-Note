@@ -1,5 +1,13 @@
 # C Programming
 
+## Overview
+This note is intented to help the students taking the NTUST EMI course ET3405302 to quickly understand C Programming and mathematics in English. 
+
+[Markdown Link](https://hackmd.io/@oViyvE1kTJmMinrhoK7HCg/ryViX2Wxo)
+
+## References
+* [C Tutorial - W3Schools](https://www.w3schools.com/c/)
+* [Mathematical English (a brief summary)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiahcqc-Zn6AhUMfN4KHSh_DfcQFnoECBAQAQ&url=https%3A%2F%2Fwebusers.imj-prg.fr%2F~jan.nekovar%2Fco%2Fen%2Fen.pdf&usg=AOvVaw2kpr1mc7trlu9bzDfuPlzl)
 ## Basic Syntax
 ```clike=
 #include <stdio.h>
