@@ -213,7 +213,7 @@ Logical Operators are used to calculate the boolean value of statements.
 
 
 
-| Operator                                       | Name        | Description (In English)                     |
+| Operator                                       | Name        | Description                  |
 | ---------------------------------------------- | ----------- | -------------------------------------------- |
 | `&&` (two ampersands)                          | Logical and | Return true if all the statements are true   |
 | <code>&#124;&#124;</code> (two vertical lines) | Logical or  | Return true if one of the statements is true |
