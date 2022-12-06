@@ -94,7 +94,7 @@ Compared to `int` , `unsigned int` only stores data values from zero to positive
 
 
 ### long double
-Compared to `double`, `long double` can express more precise. On the x86 architecture, most C compilers store `long double` as 12 bytes or 16 bytes, but Microsoft Visual C++ defines `long double` as same as `double` .
+Compared to `double`, `long double` can express more precise. On the x86 architecture, most C compilers store `long double` as 12 bytes or 16 bytes, but for Microsoft Visual compiler, `long double` is identical to `double` .
 
 ### char
 `char`, short for character, is used to store a single character. Each `char` occupies one byte.
@@ -115,7 +115,7 @@ Null character, a backslash followed by zero`'\0'`, is included at the end of a 
 
 
 ## Type Casting
-Type Casting is a method that converts one data type into another. To convert a variable's type, type a new data type inside the parenthesis `()` followed by the variable's name.
+Type Casting is a method that converts one data type into another. To convert the type of a variable, write a new data type inside the parenthesis `()` followed by the name of the variable.
 
 ```clike=
 int sum = 17, count = 5;
@@ -126,7 +126,7 @@ printf("Value of mean : %f\n", mean );
 ```
 When the above example is executed, it produces the answer `3.4`.
 
-It should be noted here that the answer would be 3 if we didn't convert the sum's type.
+It should be noted here that the answer would be 3 if we didn't convert the type of sum.
 
 
 ## Printf Format String
@@ -136,7 +136,7 @@ printf("%d", myNum);
 ```
 The printf format string, percent d inside two double quotations`"%d"`, will output the integer value of myNum.
 
-Printf format string, also known as format specifier, starts with a percent symbol `%` to print a variable's value . To print different types, use percent c `%c` for char, percent s `%s` for string ,and percent f `%f` for float.
+Printf format string, also known as format specifier, starts with a percent symbol `%` to print the value of a variable. To print different types, use percent c `%c` for char, percent s `%s` for string ,and percent f `%f` for float.
 
 
 ## Constants
@@ -322,7 +322,9 @@ for(i=1;i<=10;i++){
 In the parenthesis of the `for loop`, we have the three different statements that we need to specify instead of one in a `while loop` :
 
 Statement 1: Set the value 1 to the variable i before executing the block of code.
+
 Statement 2: Specify the looping condition.
+
 Statement 3: Increment the variable i by 1 every time we go through this loop.
 
 
@@ -335,7 +337,7 @@ Arrays are data structures that allow us to store multiple values of the same ty
 ```clike=
 int myNum[] ={1, 2, 3, 4};
 ```
-When we put an open square bracket `[` and close bracket `]` in front of the variable's name, it is going to tell the program that we declare an array variable.
+When we put an open square bracket `[` and close bracket `]` in front of the name of a variable, it is going to tell the program that we declare an array variable.
 
 Inside the curly bracket `{}`, we put many numbers and use commas `,` to separate them.
 
@@ -358,7 +360,7 @@ int myNum;
 scanf("%d", &myNum);
 printf("myNum is %d\n",myNum);
 ```
-In the above example, `scanf` function will prompt us for the integer value of myNum. It is noteworthy that we need to put an ampersand`&` in front of myNum because `scanf` takes the parameter's address.
+In the above example, `scanf` function will prompt us for the integer value of myNum. It is noteworthy that we need to put an ampersand`&` in front of myNum because `scanf` takes the address of the variable.
 
 
 
@@ -377,7 +379,7 @@ instance1.myNum = 10;
 ```
 In the first four lines, we put a `int` type alongside a `char` type to define the structure `MyStructure`. After this, we create an instance of `MyStructure` structure. 
 
-To access the structure members, use a dot `.` after the instance's name. 
+To access the structure members, use a dot `.` after the  name of the instance. 
 
 
 
@@ -391,9 +393,9 @@ int myNum = 10;
 printf("%d", myNum);  //10
 printf("%p", &myNum); //0x7ffe077e7fd4
 ```
-To get the variable's address, use the reference operator `&` before the variable's name.
+To get the address of a variable, use the reference operator `&` before the name of the variable.
 
-In the above example, we can see that myNum's address is 0x7ffe077e7fd4. &myNum is a pointer that points to myNum.
+In the above example, we can see that the address of myNum is 0x7ffe077e7fd4. &myNum is a pointer that points to myNum.
 
 A pointer is a variable that stores the memory address of another variable as its value.
 
@@ -406,11 +408,11 @@ printf("%p\n", &myNum);  //0x000000B47638F5F4
 printf("%d\n", *pmyNum); //10
 printf("%d\n", myNum);   //10
 ```
-In the second line, we create the pointer pmyNum that points to the variable myNum. pmyNum holds myNum's address, and we can see that pmyNum's value is equal to myNum's address.
+In the second line, we create the pointer pmyNum that points to the variable myNum. pmyNum holds the address of myNum, and we can see that the value of pmyNum is equal to the address of myNum.
 
 In the fifth line, we use the dereference operator `*` to get the value of the address that pmyNum holds
 
-The dereference operator `*` is opposite to the reference operator `&` : we can get a variable's address by using `&` and get a value of the address that a pointer points to by using `*` .
+The dereference operator `*` is opposite to the reference operator `&` : we can get the address of a variable by using `&` and get a value of the address that a pointer points to by using `*` .
 
 
 
@@ -431,7 +433,7 @@ int main() {
 }
 ```
 
-In the above example, we declare the function `myFunction` of `void` type with a parameter to print out the number we pass. To call the function, we just need to type out the function's name and the argument inside the parenthesis `()` .
+In the above example, we declare the function `myFunction` of `void` type with a parameter to print out the number we pass. To call the function, we just need to type out the function name and the argument inside the parenthesis `()` .
 
 
 
@@ -586,7 +588,7 @@ In the above example, we declare a global variable and a local variable. The glo
 | $$x_1 + y_i$$                              | x one plus y                                                                                                            |
 | $$R_{ij}$$                                 | (capital) R (subscript) i j; <br/> (capital) R lower i                                                                  |
 | $$M^k_{ij}$$                               | (capital) M upper k lower i j ; <br/> (capital) M superscript k subscript i                                             |
-| $$\sum_{i=0}^{n}$$                         | sum of a i x to the i for i from nought (zero) to n ; <br/> sum over i (ranging) from zero to n of a i (times) x to the |
+| $$\sum_{i=0}^{n}a_ix^i$$                         | sum of a i x to the i for i from nought (zero) to n ; <br/> sum over i (ranging) from zero to n of a i (times) x to the |
 | $$\prod_{m=1}^{\infty}b_m$$                | product of b m for m from one to infinity <br/> product over m (ranging) from one to infinity of b                      |
 | $$\sum_{j=1}^{n} a_{ij}b_{ij}$$            | sum of a i j times b j k for j from one to n; <br/> sum over j (ranging) from one to n of a i j times b j               |
 | $$\sum_{i=0}^{n} \dbinom{n}{i}x^iy^{n-i}$$ | sum of n over i x to the i y to the n minus i for i from nought (zero) to n                                             |
