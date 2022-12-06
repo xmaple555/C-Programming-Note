@@ -1,5 +1,5 @@
 # Overview
-This note is intented to help the students taking the NTUST EMI course ET3405302 to quickly understand C Programming and mathematics in English. 
+This note is intended for the students taking the NTUST EMI course ET3405302 to quickly understand C Programming and mathematics in English. 
 
 [Hackmd Link](https://hackmd.io/@oViyvE1kTJmMinrhoK7HCg/ryViX2Wxo)
 
